@@ -24,4 +24,4 @@ Please replace YouTube-Video-ID with dynamic video id value.
 
 Please write to us for any query or support : yt2mp3.ws@gmail.com
 
-Official API Website: https://www.yt2mp3.ws/developers/ OR https://youtube2mp3api.com/
+Official API Website: https://www.yt2mp3.ws/developers/
