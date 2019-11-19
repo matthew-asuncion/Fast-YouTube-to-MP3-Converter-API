@@ -8,10 +8,6 @@ Update: Now you can convert country & age restricted music videos like http://kw
 
 Here is a simple auto responsive[For All Devices] iframe code to easily embed to your websites and enjoy best ever converter for free.
 
-MP3 Converter API Code(Single Button):
-
-```<iframe src="https://youtube2mp3api.com/@api/button/mp3/YouTube-Video-ID" width="100%" height="35px" scrolling="no" style="border:none;"></iframe>```
-
 MP3 Converter API Code:
 
 ```<iframe src="https://www.yt-download.org/@api/button/mp3/YouTube-Video-ID" width="100%" height="100px" scrolling="no" style="border:none;"></iframe>```
@@ -25,3 +21,4 @@ Please replace YouTube-Video-ID with dynamic video id value.
 Please write to us for any query or support : yt2mp3.ws@gmail.com
 
 Official API Website: https://www.yt2mp3.ws/developers/
+Demo Site: https://goear.li/
