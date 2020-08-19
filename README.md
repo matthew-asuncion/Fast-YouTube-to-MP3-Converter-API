@@ -10,15 +10,15 @@ Here is a simple auto responsive[For All Devices] iframe code to easily embed to
 
 MP3 Converter API Code:
 
-```<iframe src="https://www.yt-download.org/@api/button/mp3/YouTube-Video-ID" width="100%" height="100px" scrolling="no" style="border:none;"></iframe>```
+```<iframe src="https://www.yt-download.org/api/button/mp3/YouTube-Video-ID" width="100%" height="100px" scrolling="no" style="border:none;"></iframe>```
 
 MP4, WEbM, 3Gp & Flv Video Converter API Code:
 
-```<iframe src="https://www.yt-download.org/@api/button/videos/YouTube-Video-ID" width="100%" height="100px" scrolling="no" style="border:none;"></iframe>```
+```<iframe src="https://www.yt-download.org/api/button/videos/YouTube-Video-ID" width="100%" height="100px" scrolling="no" style="border:none;"></iframe>```
 
 Please replace YouTube-Video-ID with dynamic video id value.
 
 Please write to us for any query or support : yt2mp3.ws@gmail.com
 
 Official API Website: https://www.yt2mp3.ws/developers/
-Demo Site: https://musicpleer.li/
+Demo Sites: https://musicpleer.li/ https://convert2mp3s.net/ 
