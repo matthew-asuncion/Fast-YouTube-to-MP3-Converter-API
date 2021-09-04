@@ -23,4 +23,4 @@ Please write to us for any query or support : yt2mp3.ws@gmail.com
 Official API Websites: 
 https://www.yt2mp3.ws/developers/
 https://www.yt-download.org/developers
-Demo Sites: https://musicpleer.li/ https://convert2mp3s.net/ 
+Demo Sites: https://convert2mp3s.com/ https://mp3planete.com/ https://narcosmp3.com/ https://mp3juice.guru/
