@@ -29,8 +29,7 @@ def converter():
     )
 
 
-# if __name__ == "__main__":
-## Use 'debug=True' to avoid resarting vs code
-## everytime there is an update in the code.
-
-# app.run(debug=True)
+if __name__ == "__main__":
+    # Use 'debug=True' to avoid resarting vs code
+    # everytime there is an update in the code.
+    app.run(debug=True)
