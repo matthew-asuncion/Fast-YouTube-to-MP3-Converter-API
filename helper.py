@@ -11,6 +11,7 @@ def id_grabber(youtube_url):
     # - http://www.youtube.com/v/SA2iWivDJiE?version=3&amp;hl=en_US
     query = urlparse(youtube_url)
     print(query)
+    #ParseResult(scheme='https', netloc='www.youtube.com', path='/watch', params='', query='v=x6Nr6EX3AwY', fragment='')
 
     if query.hostname == "youtu.be":
         youtube_id = query.path[1:]
