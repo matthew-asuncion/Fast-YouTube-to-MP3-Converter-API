@@ -1,6 +1,9 @@
 from urllib.parse import urlparse, parse_qs
 import requests
 import json
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
 def id_grabber(youtube_url):
@@ -34,9 +37,8 @@ def id_grabber(youtube_url):
 
 
 def info_grabber(youtube_url):
-
     youtube_id = id_grabber(youtube_url)
-    api_key = ""
+    api_key = os.getenv('api_key')
     route = f"https://www.googleapis.com/youtube/v3/videos?part=id%2C+snippet&id={youtube_id}&key={api_key}"
 
     api_request = requests.get(route)

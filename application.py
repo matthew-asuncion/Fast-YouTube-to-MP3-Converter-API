@@ -19,7 +19,7 @@ def converter():
         youtube_url = str(request.form.get("youtube_link")).strip()
 
         # This basically calls the info_grabber() function with the passed paramaters youtube(url) from the helper module.
-        # helper.info_grabber(youtube_url)
+        helper.info_grabber(youtube_url)
 
         # This basically calls the id_grabber() function with the passed paramaters youtubeurl from the helper module and then assigns it to a variable.
         youtube_id = str(helper.id_grabber(youtube_url))
