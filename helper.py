@@ -18,8 +18,12 @@ def id_grabber(youtube_url):
     # print(query)
     #ParseResult(scheme='https', netloc='www.youtube.com', path='/watch', params='', query='v=x6Nr6EX3AwY', fragment='')
 
+    # www.youtube.com
+    print(query.hostname)
+
     if query.hostname == "youtu.be":
         youtube_id = query.path[1:]
+
     elif query.hostname in {"www.youtube.com", "youtube.com"}:
         if query.path == "/watch":
             youtube_id = parse_qs(query.query)["v"][0]
@@ -47,8 +51,10 @@ def info_grabber(youtube_url):
     if api_request.status_code == 200:
         # print(f"This is the json {response}")
         video_title = response.get("items")[0].get("snippet").get("title")
+
         video_author = response.get("items")[0].get(
             "snippet").get("channelTitle")
+
         video_thumbnail = response.get("items")[0].get(
             "snippet").get("thumbnails").get("high").get("url")
 
