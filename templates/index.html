@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Converter</title>
+    <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Youtube to MP3 Converter!</h1>
+</header>
+
+
+    <section class="url-form">
+        <h2>Please enter a link you want to convert!</h2>
+        <form action="/" method="POST">
+                <label><b>YouTube URL: </b></label>    
+                <input type="text" name="youtube_link" placeholder="url">
+                <button type = "submit" value = "submit">Convert</button>
+        </form>
+    </section>
+
+
+
+    <section class="video_player">
+        {% if youtube_id %}
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/{{youtube_id}}"></iframe>
+        {% endif %}
+    </section>
+
+    <section class="video_info">
+        {% if youtube_url %}
+        <h3>YouTube URL: {{youtube_url}}</h3>
+        {% endif %}
+        
+        {% if youtube_id %}
+        <h3>YouTube ID: {{youtube_id}}</h3>
+        {% endif %}
+    </section>
+
+    <section class="video_downloader">
+        {% if api_converter_link %}
+        <iframe src="{{api_converter_link}}" width="100%" height="100px" scrolling="no" style="border:none;"></iframe>
+        {% endif %}
+    </section>
+
+    </div>
+</body>
+</html>

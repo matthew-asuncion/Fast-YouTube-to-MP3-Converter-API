@@ -1,0 +1,21 @@
+header{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+body {
+    text-align: center;
+}
+
+
+section{
+    margin-bottom: 2.5%;
+}
+
+section *{
+    margin-bottom: 1%;
+}
+
+section form{
+    font-size: 40px;
+}
