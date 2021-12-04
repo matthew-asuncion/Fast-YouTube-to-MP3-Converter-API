@@ -2,7 +2,7 @@
 
 A simple way to convert Youtube videos to mp3/mp4 using an API service. Get quality like 320 kbps, 256 kbps, 192 kbps, 128 kbps mp3 format for all devices.
 
-Conversion is instant even in seconds for hours length videos as if there's no wait.
+Conversion is instant even in seconds for hours long videos as if there's no wait.
 
 Update: Now you can convert country & age restricted music videos like http://kworb.net/youtube/topvideos_restricted.html
 
