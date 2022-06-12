@@ -10,17 +10,19 @@ Here is a simple auto responsive[For All Devices] iframe code to easily embed to
 
 MP3 Converter API Code:
 
-```<iframe src="https://www.yt-download.org/api/button/mp3/YouTube-Video-ID" width="100%" height="100px" scrolling="no" style="border:none;"></iframe>```
+```<iframe id="buttonApi" src="https://convert2mp3s.com/api/button/mp3?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0"
+width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>```
 
 MP4, WEbM, 3Gp & Flv Video Converter API Code:
 
-```<iframe src="https://www.yt-download.org/api/button/videos/YouTube-Video-ID" width="100%" height="100px" scrolling="no" style="border:none;"></iframe>```
+```<iframe id="widgetApi" src="https://convert2mp3s.com/api/widget?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0"
+width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>```
 
-Please replace YouTube-Video-ID with dynamic video id value.
+Please replace {VIDEO_URL} with dynamic video id value.
 
 Please write to us for any query or support : yt2mp3.ws@gmail.com
 
 Official API Websites: 
-https://www.yt2mp3.ws/developers/
-https://www.yt-download.org/developers
-Demo Sites: https://convert2mp3s.com/ https://mp3planete.com/ https://narcosmp3.com/ https://mp3juice.guru/
+https://convert2mp3s.com/developers
+http://www.convert2api.com/
+Demo Sites: https://convert2mp3s.com/ https://mp3juice.guru/
