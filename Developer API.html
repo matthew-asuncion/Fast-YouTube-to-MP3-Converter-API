@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Converter Developer APIs</title>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="https://convert2mp3s.com/css/app.css">
+<style>
+    [wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {
+        display: none;
+    }
+
+    [wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {
+        display:none;
+    }
+
+    [wire\:offline] {
+        display: none;
+    }
+
+    [wire\:dirty]:not(textarea):not(input):not(select) {
+        display: none;
+    }
+
+    input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {
+        animation-duration: 50000s;
+        animation-name: livewireautofill;
+    }
+
+    @keyframes livewireautofill { from {} }
+</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<div class="min-h-screen">
+<main>
+<div class="min-h-screen bg-base-200">
+<h1 class="text-5xl font-bold text-center py-5">Converter Developer APIs</h1>
+<div class="max-w-6xl mx-auto">
+<div class="card bg-base-100 shadow-xl my-5">
+<div class="card-body">
+<h2 class="card-title text-center">Single Button API</h2>
+<div class="px-2 py-4 text-gray-900 bg-blue-300 border-2 border-blue-500 rounded-md break-words">
+<div class="badge text-white bg-blue-500 rounded-md border-0 px-4 py-4">GET</div>
+<span class="my-4">https://convert2mp3s.com/api/single/{FTYPE}?url={VIDEO_URL}</span>
+</div>
+<h3>Parameters</h3>
+<div class="badge">FTYPE</div>
+<p>mp3, mp4, webm</p>
+<div class="badge">VIDEO_URL</div>
+<p>any YouTube, SoundCloud, Facebook, Twitter, Instagram, TikTok, Vimeo, Dailymotion, VK, or AOL Video URL</p>
+<p class="text-center">iFrame Code:</p>
+<div class="mockup-code min-w-full">
+<pre><code>&lt;iframe src=&quot;https://convert2mp3s.com/api/single/mp3?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0&quot;</code></pre>
+<pre><code>width=&quot;100%&quot; height=&quot;100%&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; style=&quot;border:none&quot;&gt;&lt;/iframe&gt;</code></pre>
+</div>
+<p class="text-center">Generates this:</p>
+<iframe id="singleButtonApi" src="https://convert2mp3s.com/api/single/mp3?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
+</div>
+</div>
+<div class="card bg-base-100 shadow-xl my-5">
+<div class="card-body">
+<h2 class="card-title text-center">Button API</h2>
+<div class="px-2 py-4 text-gray-900 bg-blue-300 border-2 border-blue-500 rounded-md break-words">
+<div class="badge text-white bg-blue-500 rounded-md border-0 px-4 py-4">GET</div>
+<span class="my-4">https://convert2mp3s.com/api/button/{FTYPE}?url={VIDEO_URL}</span>
+</div>
+<h3>Parameters</h3>
+<div class="badge">FTYPE</div>
+<p>mp3, mp4, webm</p>
+<div class="badge">VIDEO_URL</div>
+<p>any YouTube, SoundCloud, Facebook, Twitter, Instagram, TikTok, Vimeo, Dailymotion, VK, or AOL Video URL</p>
+<p class="text-center">iFrame Code:</p>
+<div class="mockup-code min-w-full">
+<pre><code>&lt;iframe id=&quot;buttonApi&quot; src=&quot;https://convert2mp3s.com/api/button/mp3?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0&quot;</code></pre>
+<pre><code>width=&quot;100%&quot; height=&quot;100%&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; style=&quot;border:none&quot;&gt;&lt;/iframe&gt;</code></pre>
+</div>
+<p class="text-center">Javascript code for automatically resizing:</p>
+<div class="mockup-code min-w-full">
+<pre><code>&lt;!-- Put the Library in your &lt;head&gt; tag --&gt;</code></pre>
+<pre><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<pre></pre>
+<pre><code>&lt;!-- Put the resizer code after your &lt;iframe&gt; tag --&gt;</code></pre>
+<pre><code>&lt;script&gt;iFrameResize({ log: false, minHeight: 360 }, '#buttonApi')&lt;/script&gt;</code></pre>
+</div>
+<p class="text-center">Generates this:</p>
+<iframe id="buttonApi" src="https://convert2mp3s.com/api/button/mp3?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+<script>iFrameResize({ log: false, minHeight: 360 }, '#buttonApi')</script>
+</div>
+</div>
+<div class="card bg-base-100 shadow-xl my-5">
+<div class="card-body">
+<h2 class="card-title text-center">Widget API</h2>
+<div class="px-2 py-4 text-gray-900 bg-blue-300 border-2 border-blue-500 rounded-md break-words">
+<div class="badge text-white bg-blue-500 rounded-md border-0 px-4 py-4">GET</div>
+<span class="my-4">https://convert2mp3s.com/api/widget?url={VIDEO_URL}</span>
+</div>
+<h3>Parameters</h3>
+<div class="badge">VIDEO_URL</div>
+<p>any YouTube, SoundCloud, Facebook, Twitter, Instagram, TikTok, Vimeo, Dailymotion, VK, or AOL Video URL</p>
+<p class="text-center">iFrame Code:</p>
+<div class="mockup-code min-w-full">
+<pre><code>&lt;iframe id=&quot;widgetApi&quot; src=&quot;https://convert2mp3s.com/api/widget?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0&quot;</code></pre>
+<pre><code>width=&quot;100%&quot; height=&quot;100%&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; style=&quot;border:none&quot;&gt;&lt;/iframe&gt;</code></pre>
+</div>
+<p class="text-center">Javascript code for automatically resizing:</p>
+<div class="mockup-code min-w-full">
+<pre><code>&lt;!-- Put the Library in your &lt;head&gt; tag --&gt;</code></pre>
+<pre><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<pre></pre>
+<pre><code>&lt;!-- Put the resizer code after your &lt;iframe&gt; tag --&gt;</code></pre>
+<pre><code>&lt;script&gt;iFrameResize({ log: false, minHeight: 400 }, '#widgetApi')&lt;/script&gt;</code></pre>
+</div>
+<p class="text-center">Generates this:</p>
+<iframe id="widgetApi" src="https://convert2mp3s.com/api/widget?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+<script>iFrameResize({ log: false, minHeight: 400 }, '#widgetApi')</script>
+</div>
+</div>
+<div class="card bg-base-100 shadow-xl my-5">
+<div class="card-body">
+<h2 class="card-title text-center">Widget v2 API</h2>
+<div class="px-2 py-4 text-gray-900 bg-blue-300 border-2 border-blue-500 rounded-md break-words">
+<div class="badge text-white bg-blue-500 rounded-md border-0 px-4 py-4">GET</div>
+<span class="my-4">https://convert2mp3s.com/api/widgetv2?url={VIDEO_URL}</span>
+</div>
+<h3>Parameters</h3>
+<div class="badge">VIDEO_URL</div>
+<p>any YouTube, SoundCloud, Facebook, Twitter, Instagram, TikTok, Vimeo, Dailymotion, VK, or AOL Video URL</p>
+<p class="text-center">iFrame Code:</p>
+<div class="mockup-code min-w-full">
+<pre><code>&lt;iframe id=&quot;widgetv2Api&quot; src=&quot;https://convert2mp3s.com/api/widgetv2?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0&quot;</code></pre>
+<pre><code>width=&quot;100%&quot; height=&quot;100%&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; style=&quot;border:none&quot;&gt;&lt;/iframe&gt;</code></pre>
+</div>
+<p class="text-center">Javascript code for automatically resizing:</p>
+<div class="mockup-code min-w-full">
+<pre><code>&lt;!-- Put the Library in your &lt;head&gt; tag --&gt;</code></pre>
+<pre><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<pre></pre>
+<pre><code>&lt;!-- Put the resizer code after your &lt;iframe&gt; tag --&gt;</code></pre>
+<pre><code>&lt;script&gt;iFrameResize({ log: false, minHeight: 400 }, '#widgetv2Api')&lt;/script&gt;</code></pre>
+</div>
+<p class="text-center">Generates this:</p>
+<iframe id="widgetv2Api" src="https://convert2mp3s.com/api/widgetv2?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+<script>iFrameResize({ log: false, minHeight: 400 }, '#widgetv2Api')</script>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body>
+</html>
