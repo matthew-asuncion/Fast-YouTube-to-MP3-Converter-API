@@ -10,13 +10,13 @@ Here is a simple auto responsive[For All Devices] iframe code to easily embed to
 
 MP3 Converter API Code:
 
-```<iframe id="buttonApi" src="https://convert2mp3s.com/api/button/mp3?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0"
-width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>```
+<iframe id="buttonApi" src="https://convert2mp3s.com/api/button/mp3?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0"
+width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
 
 MP4, WEbM, 3Gp & Flv Video Converter API Code:
 
-```<iframe id="widgetApi" src="https://convert2mp3s.com/api/widget?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0"
-width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>```
+<iframe id="widgetApi" src="https://convert2mp3s.com/api/widget?url=https://www.youtube.com/watch?v=pRpeEdMmmQ0"
+width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
 
 Please replace {VIDEO_URL} with dynamic video id value.
 
