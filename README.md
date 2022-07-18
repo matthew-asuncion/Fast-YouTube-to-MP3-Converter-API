@@ -6,6 +6,9 @@ APIs works with any programming language like PHP, Python, JavaScript, jQuery, A
 
 Converter Developer API supports YouTube, SoundCloud, Facebook, Twitter, Instagram, TikTok, Vimeo, Dailymotion, VK & AOL Video platforms.   
 
+**Warning:** API does not work if used with **"sandbox"** iFrame attribute. Your Domain/IP will be blocked.   
+ex: ~~<iframe sandbox="allow-scripts allow-same-origin"...~~   
+
 **1. Single Button API**  
 `GET https://convert2mp3s.com/api/single/{FTYPE}?url={VIDEO_URL}`  
 Parameters  
