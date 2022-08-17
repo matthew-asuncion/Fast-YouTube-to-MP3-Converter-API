@@ -71,4 +71,4 @@ width="100%" height="100%" allowtransparency="true" scrolling="no" style="border
 - https://convert2api.com  
 **Demo Sites:**  
 - https://convert2mp3s.com 
-- https://mp3juice.guru
+- https://mp3juices.digital
