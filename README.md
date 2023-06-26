@@ -64,7 +64,7 @@ width="100%" height="100%" allowtransparency="true" scrolling="no" style="border
 **API Preview :**  
 ![Widget V2 API](https://i.imgur.com/HITRy32.jpeg)  
 
-**Please write to us for any query or technical support : convert2mp3s@gmail.com**  
+**Technical Support & Domain Activation Contact: convert2mp3s@gmail.com**  
 
 **Official API Websites:**  
 - https://convert2mp3s.com/developers
